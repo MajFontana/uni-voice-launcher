@@ -2,10 +2,10 @@
 
 A Python script for Windows that classifies voice commands and runs shell commands.
 
-<img alt="Confusion matrix of the trained model" src="docs/images/confusion-matrix.png" width="500">
-
-*Confusion matrix of the trained model*
-
+<figure>
+    <img alt="Confusion matrix of the trained model" src="docs/images/confusion-matrix.png" width="500">
+    <figcaption>*Confusion matrix of the trained model*</figcaption>
+</figure>
 
 ## Usage
 
