@@ -1,3 +1,5 @@
+print("Loading ...")
+
 from tensorflow import keras
 from rt_signal.io import AudioIO
 import numpy
@@ -9,10 +11,10 @@ import threading
 
 
 
-python = r'C:\Users\Foxner\AppData\Local\Programs\Python\Python311\pythonw.exe "C:\Users\Foxner\AppData\Local\Programs\Python\Python311\Lib\idlelib\idle.pyw"'
-notepad = r'%windir%\system32\notepad.exe'
-terminal = r'wt'
-documents = r'start %windir%\explorer.exe "C:\Users\Foxner\Documents"'
+python = r'start /B python -m idlelib'
+notepad = r'start /B %windir%\system32\notepad.exe'
+terminal = r'start /B wt'
+documents = r'start /B explorer "%userprofile%\Documents"'
 
 
 
@@ -32,7 +34,6 @@ CLASSES = ["python", "notepad", "terminal", "documents"]
 
 
 
-print("Loading trained model ...")
 model = keras.models.load_model(MODEL_FILE)
 
 
